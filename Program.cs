@@ -13,7 +13,8 @@
             Console.WriteLine("2. Odejmowanie (-)");
             Console.WriteLine("3. Mnożenie (*)");
             Console.WriteLine("4. Dzielenie (/)");
-            Console.Write("Wpisz numer działania (1-4): ");
+            Console.WriteLine("5. Modulo (%)");
+            Console.Write("Wpisz numer działania (1-5): ");
            
             string wybor = Console.ReadLine();
             double liczba1, liczba2, wynik;
@@ -57,6 +58,10 @@
                         wynik = liczba1 / liczba2;
                         Console.WriteLine($"Wynik dzielenia: {liczba1} / {liczba2} = {wynik}");
                     }
+                    break;
+                case "5": // Modulo
+                    wynik = liczba1 % liczba2;
+                    Console.WriteLine($"Wynik modulo: {liczba1} % {liczba2} = {wynik}");
                     break;
                 default:
                     Console.WriteLine("Błąd: Nieprawidłowy wybór działania.");
